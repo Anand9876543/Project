@@ -1,6 +1,6 @@
 import random
-def Guess():  
-    r=random.randint(1,100)    
+def Guess():  # creating a function Guess
+    r=random.randint(1,100)  # generates a random number
     for I in range(1,11):     
         print(f'\n  GUESS NO. {I}')
         guess=input('  ENTER YOUR GUESS  : ')
@@ -33,12 +33,10 @@ def Guess():
             print('ENTER VALID NUMBER ')
              
         
-    
-    
 print(''' ____________ =: GAME RULES := ____________\n\n 1. YOU HAVE TO GUESS A NUMBER BETWEEN 1-100.\n \n 2. YOU HAVE ONLY TEN GUESSES. \n \n 3. ENTER "Q" FOR QUIT THE GAME. \n''')    
 s=input('  ENTER "S" FOR START THE GAME : ')
 if s=='S':
-    Guess()     
+    Guess()     #calling a function Guess
 
 while True:
     rest=input('\n  ENTER "R" FOR RESTART ,  \n "Q" FOR QUIT THE GAME : ')
